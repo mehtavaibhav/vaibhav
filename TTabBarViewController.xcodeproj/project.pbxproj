@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1811985A39967A71436D21F1 /* Pods_TTabBarViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A9D68464C4EF8F84CD47C8 /* Pods_TTabBarViewController.framework */; };
 		C5798FC320209AC900CEDFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5798FC220209AC900CEDFCE /* AppDelegate.swift */; };
 		C5798FC820209AC900CEDFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5798FC620209AC900CEDFCE /* Main.storyboard */; };
 		C5798FCA20209AC900CEDFCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5798FC920209AC900CEDFCE /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05A9D68464C4EF8F84CD47C8 /* Pods_TTabBarViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTabBarViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6E48F22E83F618957461CA /* Pods-TTabBarViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTabBarViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTabBarViewController/Pods-TTabBarViewController.debug.xcconfig"; sourceTree = "<group>"; };
 		C5798FBF20209AC900CEDFCE /* TTabBarViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTabBarViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5798FC220209AC900CEDFCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5798FC720209AC900CEDFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C5798FCC20209AC900CEDFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5798FCE20209AC900CEDFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5798FD520209AE700CEDFCE /* TTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTabBarViewController.swift; sourceTree = "<group>"; };
+		DAE0E32A475EA8D9BDD80548 /* Pods-TTabBarViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTabBarViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTabBarViewController/Pods-TTabBarViewController.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1811985A39967A71436D21F1 /* Pods_TTabBarViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22C350AC5AF2DD62E4103EBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F6E48F22E83F618957461CA /* Pods-TTabBarViewController.debug.xcconfig */,
+				DAE0E32A475EA8D9BDD80548 /* Pods-TTabBarViewController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		41ECC5D40628B33323E43CAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05A9D68464C4EF8F84CD47C8 /* Pods_TTabBarViewController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C5798FB620209AC800CEDFCE = {
 			isa = PBXGroup;
 			children = (
 				C5798FC120209AC900CEDFCE /* TTabBarViewController */,
 				C5798FC020209AC900CEDFCE /* Products */,
+				22C350AC5AF2DD62E4103EBA /* Pods */,
+				41ECC5D40628B33323E43CAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5798FD120209AC900CEDFCE /* Build configuration list for PBXNativeTarget "TTabBarViewController" */;
 			buildPhases = (
+				F75837171E13D84852BEB4FB /* [CP] Check Pods Manifest.lock */,
 				C5798FBB20209AC900CEDFCE /* Sources */,
 				C5798FBC20209AC900CEDFCE /* Frameworks */,
 				C5798FBD20209AC900CEDFCE /* Resources */,
+				1B4718548855BDF05932A9EA /* [CP] Embed Pods Frameworks */,
+				7868CE4EA91F9BCA290E1453 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B4718548855BDF05932A9EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTabBarViewController/Pods-TTabBarViewController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7868CE4EA91F9BCA290E1453 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTabBarViewController/Pods-TTabBarViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F75837171E13D84852BEB4FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TTabBarViewController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5798FBB20209AC900CEDFCE /* Sources */ = {
@@ -280,6 +358,7 @@
 		};
 		C5798FD220209AC900CEDFCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F6E48F22E83F618957461CA /* Pods-TTabBarViewController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +374,7 @@
 		};
 		C5798FD320209AC900CEDFCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAE0E32A475EA8D9BDD80548 /* Pods-TTabBarViewController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

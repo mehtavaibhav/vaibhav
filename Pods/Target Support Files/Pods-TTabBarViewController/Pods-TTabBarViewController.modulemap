@@ -1,0 +1,6 @@
+framework module Pods_TTabBarViewController {
+  umbrella header "Pods-TTabBarViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
